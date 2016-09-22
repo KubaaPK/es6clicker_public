@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #272727; }
+  body .topbar {
+    background-color: #000011;
+    height: 50px;
+    width: 100%; }
+  body .shop {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    z-index: 888; }
+    body .shop button {
+      width: 100%;
+      height: calc(100vh / 6 - 8.5px);
+      margin: 0;
+      border: 1px solid #000000;
+      background-color: #2e2e2e;
+      color: #999999;
+      transition: 0.1s; }
+      body .shop button:hover {
+        background-color: #8c8c8c;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.1s; }
+  body .scoreboard {
+    width: 80%;
+    padding: 0;
+    text-align: center;
+    background-color: #484848;
+    color: #ffffff; }
+    body .scoreboard p {
+      font-size: 36px;
+      padding: 20px 0;
+      margin: 0;
+      position: relative; }
+    body .scoreboard span {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      bottom: 10px; }
+  body .coinWrapper {
+    position: absolute;
+    left: 28.5%;
+    right: 0;
+    top: 250px; }
+    body .coinWrapper .coin {
+      font-size: 40px;
+      border: 1px solid #ffffff;
+      padding: 5%;
+      background-color: #2e2e2e;
+      color: #999999;
+      transition: 0.1s; }
+      body .coinWrapper .coin:hover {
+        background-color: #8c8c8c;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.1s; }
+      body .coinWrapper .coin:hover {
+        cursor: pointer;
+        background-color: #585858; }
+  body .leftbar {
+    position: absolute;
+    top: 150px;
+    left: 10px; }
+  body .showUpgrades {
+    display: flex !important; }
+  body #showUpgrades {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 1px solid #000000;
+    background-color: #2e2e2e;
+    padding: 10px;
+    color: #999999;
+    transition: 0.1s; }
+    body #showUpgrades:hover {
+      background-color: #8c8c8c;
+      color: #ffffff;
+      cursor: pointer;
+      transition: 0.1s; }
+  body .upgrades {
+    top: 40px;
+    display: none; }
+    body .upgrades .upgrade {
+      margin: 5%; }
+      body .upgrades .upgrade:hover:before {
+        content: attr(data-tooltip);
+        width: 150%;
+        line-height: 2em;
+        padding: 1px 1px 1px 10px;
+        border: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        bottom: -60%;
+        color: #000000; }
+    body .upgrades button {
+      height: 50px;
+      width: 50px;
+      border: 0;
+      cursor: pointer; }
+      body .upgrades button:first-child {
+        background-image: url("assets/icons/doubleClickPower.jpg"); }
+      body .upgrades button:nth-child(2) {
+        background-image: url("assets/icons/tripleClickPower.jpg"); }
+      body .upgrades button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+
+/*# sourceMappingURL=style.css.map */
